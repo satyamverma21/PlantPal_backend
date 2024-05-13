@@ -1,4 +1,5 @@
 const express = require('express')
+
 const router = express.Router()
 const User = require('../models/User')
 const { body, validationResult } = require('express-validator');
@@ -8,11 +9,6 @@ const fetchuser = require('../middleware/fetchuser');
 const axios = require('axios')
 
 const JWT_SECRET = "secretjwtstring"
-
-router.post('/', (req, res) => {
-    console.log(req.body, "msg:debug");
-    res.json({ msg: "success hit" });
-})
 
 const request = (msg) => console.log("requested for :" + msg)
 
@@ -76,8 +72,8 @@ router.post('/login', [
         if (!passwordCompare) {
             return res.status(400).json({ error: "Login with correct credentials " })
         }
-       
-        res.json({ message:"successfully signed in " })
+
+        res.json({ message: "successfully signed in " })
 
 
     }
