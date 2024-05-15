@@ -1,0 +1,302 @@
+{
+  "query": {
+    "project": "all",
+    "images": [
+      "1b72954e2db2a3a825a7fa07413db202"
+    ],
+    "organs": [
+      "auto"
+    ],
+    "includeRelatedImages": false,
+    "noReject": false
+  },
+  "language": "en",
+  "preferedReferential": "k-world-flora",
+  "bestMatch": "Ocimum tenuiflorum L.",
+  "results": [
+    {
+      "score": 0.35495,
+      "species": {
+        "scientificNameWithoutAuthor": "Ocimum tenuiflorum",
+        "scientificNameAuthorship": "L.",
+        "genus": {
+          "scientificNameWithoutAuthor": "Ocimum",
+          "scientificNameAuthorship": "",
+          "scientificName": "Ocimum"
+        },
+        "family": {
+          "scientificNameWithoutAuthor": "Lamiaceae",
+          "scientificNameAuthorship": "",
+          "scientificName": "Lamiaceae"
+        },
+        "commonNames": [
+          "Tulasi",
+          "Tulsi",
+          "तुलसी"
+        ],
+        "scientificName": "Ocimum tenuiflorum L."
+      },
+      "gbif": {
+        "id": "2927100"
+      },
+      "powo": {
+        "id": "453130-1"
+      }
+    },
+    {
+      "score": 0.17247,
+      "species": {
+        "scientificNameWithoutAuthor": "Ocimum lamiifolium",
+        "scientificNameAuthorship": "Hochst. ex Benth.",
+        "genus": {
+          "scientificNameWithoutAuthor": "Ocimum",
+          "scientificNameAuthorship": "",
+          "scientificName": "Ocimum"
+        },
+        "family": {
+          "scientificNameWithoutAuthor": "Lamiaceae",
+          "scientificNameAuthorship": "",
+          "scientificName": "Lamiaceae"
+        },
+        "commonNames": [],
+        "scientificName": "Ocimum lamiifolium Hochst. ex Benth."
+      },
+      "gbif": {
+        "id": "8276681"
+      },
+      "powo": {
+        "id": "453009-1"
+      }
+    },
+    {
+      "score": 0.10844,
+      "species": {
+        "scientificNameWithoutAuthor": "Ocimum gratissimum",
+        "scientificNameAuthorship": "L.",
+        "genus": {
+          "scientificNameWithoutAuthor": "Ocimum",
+          "scientificNameAuthorship": "",
+          "scientificName": "Ocimum"
+        },
+        "family": {
+          "scientificNameWithoutAuthor": "Lamiaceae",
+          "scientificNameAuthorship": "",
+          "scientificName": "Lamiaceae"
+        },
+        "commonNames": [
+          "African basil",
+          "East Indian basil",
+          "Russian basil"
+        ],
+        "scientificName": "Ocimum gratissimum L."
+      },
+      "gbif": {
+        "id": "2927094"
+      },
+      "powo": {
+        "id": "452969-1"
+      }
+    },
+    {
+      "score": 0.03518,
+      "species": {
+        "scientificNameWithoutAuthor": "Salvia confertiflora",
+        "scientificNameAuthorship": "Pohl",
+        "genus": {
+          "scientificNameWithoutAuthor": "Salvia",
+          "scientificNameAuthorship": "",
+          "scientificName": "Salvia"
+        },
+        "family": {
+          "scientificNameWithoutAuthor": "Lamiaceae",
+          "scientificNameAuthorship": "",
+          "scientificName": "Lamiaceae"
+        },
+        "commonNames": [
+          "Sabra-spike Sage"
+        ],
+        "scientificName": "Salvia confertiflora Pohl"
+      },
+      "gbif": {
+        "id": "7309500"
+      },
+      "powo": {
+        "id": "456011-1"
+      }
+    },
+    {
+      "score": 0.01738,
+      "species": {
+        "scientificNameWithoutAuthor": "Teucrium scorodonia",
+        "scientificNameAuthorship": "L.",
+        "genus": {
+          "scientificNameWithoutAuthor": "Teucrium",
+          "scientificNameAuthorship": "",
+          "scientificName": "Teucrium"
+        },
+        "family": {
+          "scientificNameWithoutAuthor": "Lamiaceae",
+          "scientificNameAuthorship": "",
+          "scientificName": "Lamiaceae"
+        },
+        "commonNames": [
+          "Wood Sage",
+          "Wood germander",
+          "Woodland germander"
+        ],
+        "scientificName": "Teucrium scorodonia L."
+      },
+      "gbif": {
+        "id": "2926901"
+      },
+      "powo": {
+        "id": "460717-1"
+      }
+    },
+    {
+      "score": 0.01202,
+      "species": {
+        "scientificNameWithoutAuthor": "Tetradenia riparia",
+        "scientificNameAuthorship": "(Hochst.) Codd",
+        "genus": {
+          "scientificNameWithoutAuthor": "Tetradenia",
+          "scientificNameAuthorship": "",
+          "scientificName": "Tetradenia"
+        },
+        "family": {
+          "scientificNameWithoutAuthor": "Lamiaceae",
+          "scientificNameAuthorship": "",
+          "scientificName": "Lamiaceae"
+        },
+        "commonNames": [
+          "Gingerbush",
+          "Misty plum bush",
+          "Mountain Mist"
+        ],
+        "scientificName": "Tetradenia riparia (Hochst.) Codd"
+      },
+      "gbif": {
+        "id": "5609418"
+      },
+      "powo": {
+        "id": "913408-1"
+      },
+      "iucn": {
+        "id": "149504836",
+        "category": "LC"
+      }
+    },
+    {
+      "score": 0.01099,
+      "species": {
+        "scientificNameWithoutAuthor": "Salvia verticillata",
+        "scientificNameAuthorship": "L.",
+        "genus": {
+          "scientificNameWithoutAuthor": "Salvia",
+          "scientificNameAuthorship": "",
+          "scientificName": "Salvia"
+        },
+        "family": {
+          "scientificNameWithoutAuthor": "Lamiaceae",
+          "scientificNameAuthorship": "",
+          "scientificName": "Lamiaceae"
+        },
+        "commonNames": [
+          "Lilac sage",
+          "Whorled clary",
+          "Whorled Sage"
+        ],
+        "scientificName": "Salvia verticillata L."
+      },
+      "gbif": {
+        "id": "2926995"
+      },
+      "powo": {
+        "id": "457502-1"
+      }
+    },
+    {
+      "score": 0.00967,
+      "species": {
+        "scientificNameWithoutAuthor": "Plectranthus grallatus",
+        "scientificNameAuthorship": "Briq.",
+        "genus": {
+          "scientificNameWithoutAuthor": "Plectranthus",
+          "scientificNameAuthorship": "",
+          "scientificName": "Plectranthus"
+        },
+        "family": {
+          "scientificNameWithoutAuthor": "Lamiaceae",
+          "scientificNameAuthorship": "",
+          "scientificName": "Lamiaceae"
+        },
+        "commonNames": [],
+        "scientificName": "Plectranthus grallatus Briq."
+      },
+      "gbif": {
+        "id": "3904483"
+      },
+      "powo": {
+        "id": "454422-1"
+      }
+    },
+    {
+      "score": 0.00853,
+      "species": {
+        "scientificNameWithoutAuthor": "Salvia lasiantha",
+        "scientificNameAuthorship": "Benth.",
+        "genus": {
+          "scientificNameWithoutAuthor": "Salvia",
+          "scientificNameAuthorship": "",
+          "scientificName": "Salvia"
+        },
+        "family": {
+          "scientificNameWithoutAuthor": "Lamiaceae",
+          "scientificNameAuthorship": "",
+          "scientificName": "Lamiaceae"
+        },
+        "commonNames": [],
+        "scientificName": "Salvia lasiantha Benth."
+      },
+      "gbif": {
+        "id": "3898253"
+      },
+      "powo": {
+        "id": "456525-1"
+      }
+    },
+    {
+      "score": 0.00633,
+      "species": {
+        "scientificNameWithoutAuthor": "Teucrium betonicum",
+        "scientificNameAuthorship": "L'Hér.",
+        "genus": {
+          "scientificNameWithoutAuthor": "Teucrium",
+          "scientificNameAuthorship": "",
+          "scientificName": "Teucrium"
+        },
+        "family": {
+          "scientificNameWithoutAuthor": "Lamiaceae",
+          "scientificNameAuthorship": "",
+          "scientificName": "Lamiaceae"
+        },
+        "commonNames": [
+          "Pipe-Cleaner Germander"
+        ],
+        "scientificName": "Teucrium betonicum L'Hér."
+      },
+      "gbif": {
+        "id": "3898359"
+      },
+      "powo": {
+        "id": "460266-1"
+      },
+      "iucn": {
+        "id": "162322",
+        "category": "LC"
+      }
+    }
+  ],
+  "version": "2024-02-22 (7.1)",
+  "remainingIdentificationRequests": 495
+}
