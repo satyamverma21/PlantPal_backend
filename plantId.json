@@ -1,0 +1,239 @@
+{
+  "access_token": "woWc7EKKeVvmn5D",
+  "model_version": "plant_id:3.7.0",
+  "custom_id": null,
+  "input": {
+    "latitude": null,
+    "longitude": null,
+    "images": [
+      "https://plant.id/media/imgs/a0f0be40c43e4938a562396dffe52a6d.jpg"
+    ],
+    "datetime": "2024-05-15T15:00:32.704198+00:00"
+  },
+  "result": {
+    "classification": {
+      "suggestions": [
+        {
+          "id": "13d3e06f25bd664a",
+          "name": "Ocimum tenuiflorum",
+          "probability": 0.7251,
+          "details": {
+            "common_names": [
+              "holy basil",
+              "Tulsi",
+              "Krishna Tulsi"
+            ],
+            "url": "https://en.wikipedia.org/wiki/Ocimum_tenuiflorum",
+            "description": {
+              "value": "Ocimum tenuiflorum, commonly known as holy basil, tulsi or tulasi, and tamole, damole, or domole in Fiji, is an aromatic perennial plant in the family Lamiaceae. It is native to the Indian subcontinent and widespread as a cultivated plant throughout the Southeast Asian tropics.Tulsi is cultivated for religious and traditional medicine purposes, and also for its essential oil. It is widely used as a herbal tea, commonly used in Ayurveda, and has a place within the Vaishnava tradition of Hinduism, in which devotees perform worship involving holy basil plants or leaves.",
+              "citation": "https://en.wikipedia.org/wiki/Ocimum_tenuiflorum",
+              "license_name": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "synonyms": [
+              "Geniosporum tenuiflorum",
+              "Lumnitzera tenuiflora",
+              "Moschosma tenuiflorum",
+              "Ocimum flexuosum",
+              "Ocimum frutescens",
+              "Ocimum hirsutum",
+              "Ocimum inodorum",
+              "Ocimum monachorum",
+              "Ocimum sanctum",
+              "Ocimum sanctum var. cubensis",
+              "Ocimum sanctum var. hirsutum",
+              "Ocimum scutellarioides",
+              "Ocimum subserratum",
+              "Ocimum tenuiflorum f. villicaulis",
+              "Ocimum tenuiflorum villicaulis",
+              "Ocimum tomentosum",
+              "Ocimum villosum",
+              "Plectranthus monachorum"
+            ],
+            "image": {
+              "value": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/f49/f4965f1f9d972c6abe82f927dcdc19067a859852.jpg",
+              "citation": "//commons.wikimedia.org/wiki/User:Suyash.dwivedi",
+              "license_name": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            },
+            "edible_parts": [
+              "flowers",
+              "leaves",
+              "seeds"
+            ],
+            "watering": null,
+            "language": "en",
+            "entity_id": "13d3e06f25bd664a"
+          }
+        },
+        {
+          "id": "04968a43d308429f",
+          "name": "Ocimum basilicum",
+          "probability": 0.1616,
+          "details": {
+            "common_names": [
+              "sweet basil",
+              "Basil"
+            ],
+            "url": "https://en.wikipedia.org/wiki/Basil",
+            "description": {
+              "value": "Basil (, also US: ; Ocimum basilicum , also called great basil, is a culinary herb of the family Lamiaceae (mints). It is a tender plant, and is used in cuisines worldwide. In Western cuisine, the generic term \"basil\" refers to the variety also known as sweet basil or Genovese basil. Basil is native to tropical regions from Central Africa to Southeast Asia. In temperate climates basil is treated as an annual plant, however, basil can be grown as a short-lived perennial or biennial in warmer horticultural zones with tropical or Mediterranean climates.There are many varieties of basil including sweet basil, Thai basil (O. basilicum var. thyrsiflora), and Mrs. Burns' Lemon (O. basilicum var. citriodora). O. basilicum can cross-pollinate with other species of the Ocimum genus, producing hybrids such as lemon basil (O. × citriodorum) and African blue basil (O. × kilimandscharicum).",
+              "citation": "https://en.wikipedia.org/wiki/Basil",
+              "license_name": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "synonyms": [
+              "Ocimum album",
+              "Ocimum anisatum",
+              "Ocimum barrelieri",
+              "Ocimum basilicum var. album",
+              "Ocimum basilicum var. basilicum",
+              "Ocimum basilicum var. bullatum",
+              "Ocimum basilicum var. densiflorum",
+              "Ocimum basilicum var. difforme",
+              "Ocimum basilicum var. glabratum",
+              "Ocimum basilicum var. majus",
+              "Ocimum basilicum var. pelvifolium",
+              "Ocimum basilicum var. purpurascens",
+              "Ocimum basilicum var. purpurescens",
+              "Ocimum basilicum var. thyrsiflorum",
+              "Ocimum basilicum var. violaceum",
+              "Ocimum basilicum var. violocrispum",
+              "Ocimum basilicum var. viridicrispum",
+              "Ocimum basilicum var. vulgare",
+              "Ocimum bullatum",
+              "Ocimum caryophyllatum",
+              "Ocimum chevalieri",
+              "Ocimum ciliare",
+              "Ocimum ciliatum",
+              "Ocimum citriodorum",
+              "Ocimum citrodorum",
+              "Ocimum cochleatum",
+              "Ocimum dentatum",
+              "Ocimum hispidum",
+              "Ocimum integerrimum",
+              "Ocimum lanceolatum",
+              "Ocimum laxum",
+              "Ocimum majus",
+              "Ocimum medium",
+              "Ocimum minus",
+              "Ocimum nigrum",
+              "Ocimum odorum",
+              "Ocimum scabrum",
+              "Ocimum simile",
+              "Ocimum thyrsiflorum",
+              "Ocimum urticaefolium",
+              "Ocimum urticifolium",
+              "Plectranthus barrelieri"
+            ],
+            "image": {
+              "value": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/c2d/c2de9f6ee6a3a092496649ef374612e953011f74.jpg",
+              "citation": "//commons.wikimedia.org/wiki/User:Castielli",
+              "license_name": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "edible_parts": [
+              "leaves",
+              "seeds"
+            ],
+            "watering": {
+              "max": 2,
+              "min": 2
+            },
+            "language": "en",
+            "entity_id": "04968a43d308429f"
+          }
+        },
+        {
+          "id": "8d4331fcb0d7e102",
+          "name": "Tetradenia riparia",
+          "probability": 0.0404,
+          "details": {
+            "common_names": [
+              "Mountain Mist",
+              "Iboza",
+              "Ginger-bush",
+              "Ginger Iboza",
+              "Large Gingerbush",
+              "Misty Plume Bush",
+              "Misty-Plumebush",
+              "Ginger Misty-Plumebush",
+              "River Gingerbush"
+            ],
+            "url": "https://en.wikipedia.org/wiki/Tetradenia_riparia",
+            "description": {
+              "value": "Tetradenia riparia is a species of flowering plant native to southern Africa. It belongs in the mint and sage family Lamiaceae. It is occasionally referred to as misty plume bush and is commonly used as a decorative garden plant due to its flowers when in full bloom. Tetradenia means 'four glands' and riparia translates to 'growing on banks of rivers'. This species was first described by botanists (Hochst.) Codd in 1983. It is also known as ginger bush, Ibozane and musk bush.",
+              "citation": "https://en.wikipedia.org/wiki/Tetradenia_riparia",
+              "license_name": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "synonyms": [
+              "Basilicum myriostachyum",
+              "Basilicum riparium",
+              "Gumira ferruginea",
+              "Iboza riparia",
+              "Moschosma myriostachyum",
+              "Moschosma riparium",
+              "Plectranthus riparius",
+              "Premna ferruginea"
+            ],
+            "image": {
+              "value": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/252/252cf9f8225b12442844af74a42e9c61e3f85333.jpg",
+              "citation": "//commons.wikimedia.org/wiki/User:Conrado",
+              "license_name": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/"
+            },
+            "edible_parts": null,
+            "watering": null,
+            "language": "en",
+            "entity_id": "8d4331fcb0d7e102"
+          }
+        },
+        {
+          "id": "7bbc618850714a9f",
+          "name": "Ocimum gratissimum",
+          "probability": 0.0128,
+          "details": {
+            "common_names": [
+              "African basil"
+            ],
+            "url": "https://en.wikipedia.org/wiki/Ocimum_gratissimum",
+            "description": {
+              "value": "Ocimum gratissimum, also known as clove basil, African basil, and in Hawaii as wild basil, is a species of basil. It is native to Africa, Madagascar, southern Asia, and the Bismarck Archipelago, and naturalized in Polynesia, Hawaii, Mexico, Panama, West Indies, Brazil, and Bolivia.",
+              "citation": "https://en.wikipedia.org/wiki/Ocimum_gratissimum",
+              "license_name": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "synonyms": [
+              "Ocimum gratissimum var. gratissimum",
+              "Ocimum suave",
+              "Ocimum urticaefolium",
+              "Ocimum viride",
+              "Ocimum viridiflorum"
+            ],
+            "image": {
+              "value": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/596/5963867cd3c005bd3b5469022402b5495545c057.jpg",
+              "citation": "http://www.hear.org/starr/",
+              "license_name": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/"
+            },
+            "edible_parts": null,
+            "watering": null,
+            "language": "en",
+            "entity_id": "7bbc618850714a9f"
+          }
+        }
+      ]
+    },
+    "is_plant": {
+      "probability": 1,
+      "threshold": 0.5,
+      "binary": true
+    }
+  },
+  "status": "COMPLETED",
+  "sla_compliant_client": true,
+  "sla_compliant_system": true,
+  "created": 1715785232.704198,
+  "completed": 1715785232.879857
+}

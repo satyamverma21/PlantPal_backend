@@ -36,9 +36,11 @@ const upload = multer({ storage: storage });
 
 app.post('/', upload.single('image'), async (req, res) => {
 
+    console.log("debug: / ")
+
     const file = req.file;
     const url = 'https://my-api.plantnet.org/v2/identify/all?include-related-images=false&no-reject=false&lang=en&api-key=' + process.env.netKey;
-   
+
     const blob = new Blob([file.buffer], { type: file.mimetype })
     const formData = new FormData();
     formData.append('images', blob, 'image.jpg');
@@ -49,26 +51,59 @@ app.post('/', upload.single('image'), async (req, res) => {
                 'Content-Type': 'multipart/form-data',
             }
         })
-        console.log("success hit from response",response.data.bestMatch )
+        res.json({ data: response.data.results[0] })
+        console.log("debug: / responsed")
 
-        res.json({data: response.data.results[0]})
 
-        console.log("hii",response.bestMatch)
     } catch (error) {
-        // console.log("plantnet error: ", error)
-        console.log()
-        res.json({msg: error.response.data.message})
+        res.json({ msg: error.response.data.message })
+        console.log("debug: / error")
+
     }
 
+})
+
+app.post('/idPlant', upload.single('image'), async (req, res) => {
+
+    console.log("debug: /idPlant ")
+
+    const file = req.file;
+    const url = 'https://plant.id/api/v3/identification';
+
+    try {
+        // const response = await axios.post(url, {
+        //     images: [Buffer.from(file.buffer).toString('base64')],
+        // }, {
+        //     headers: {
+        //         'Api-Key': `${process.env.idKey}`,
+        //         'Content-Type': 'application/json',
+        //     },
+        //     params: {
+        //         details: 'common_names,url,description,image,synonyms,edible_parts,watering'
+        //     }
+        // })
+
+        try {
+            const data = fs.readFileSync('plantId.json', 'utf8');
+            const response = JSON.parse(data);
+            res.json({ data: response.result.classification.suggestions })
+
+        } catch (error) {
+            console.error('Error reading file:', error);
+        }
+
+
+        console.log("debug: /idPlant responded ")
+
+    } catch (error) {
+        res.json({ msg: error.message })
+        console.log("debug: /idPlant error", error.message)
+    }
 })
 
 app.get('/', (req, res) => { res.send('welcome to plantpal backend') })
 
 app.post('/sellPlant', (req, res) => {
-
-
-
-
     res.json({ 'msg': 'success' })
 })
 
