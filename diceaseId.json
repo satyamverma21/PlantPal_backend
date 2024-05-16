@@ -1,0 +1,174 @@
+{
+    "access_token": "mLabrNBBXUozMxu",
+    "model_version": "plant_id:3.7.0",
+    "custom_id": null,
+    "input": {
+      "latitude": null,
+      "longitude": null,
+      "health": "only",
+      "images": [
+        "https://plant.id/media/imgs/df315566e8e54bc9a05bd3264e2c0468.jpg"
+      ],
+      "datetime": "2024-05-16T06:42:38.907999+00:00"
+    },
+    "result": {
+      "is_plant": {
+        "probability": 1,
+        "threshold": 0.5,
+        "binary": true
+      },
+      "is_healthy": {
+        "binary": true,
+        "threshold": 0.525,
+        "probability": 0.9340905398130417
+      },
+      "disease": {
+        "suggestions": [
+          {
+            "id": "af7b78782de52bd8",
+            "name": "senescence",
+            "probability": 0.1481,
+            "details": {
+              "local_name": "senescence",
+              "description": "Senescence is a process of aging that can occur due to physiological aging or environmental stress.",
+              "url": "https://en.wikipedia.org/wiki/Plant_senescence",
+              "treatment": {
+                "biological": [
+                  "Remove dead parts of the plant."
+                ],
+                "prevention": [
+                  "Prevent plant stress by optimal watering, fertilizing and protection from sun and frost."
+                ]
+              },
+              "classification": [],
+              "common_names": [
+                "aging"
+              ],
+              "cause": null,
+              "language": "en",
+              "entity_id": "af7b78782de52bd8"
+            }
+          },
+          {
+            "id": "765b06482c4e4ae9",
+            "name": "nutrient deficiency",
+            "probability": 0.1058,
+            "details": {
+              "local_name": "nutrient deficiency",
+              "description": "Nutrient deficiency is caused by a lack of macronutrients or micronutrients essential for the plant. This can be caused by insufficient amounts of nutrients in the soil or unsuitable conditions for nutrients uptake.",
+              "url": "https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/pests-and-problems/environmental/nutrients.aspx",
+              "treatment": {
+                "chemical": [
+                  "Apply missing nutrients to the plant foliage (suitable for quick help). Follow the instructions on the chosen product to prevent excessive fertilizer usage.",
+                  "Apply missing nutrients to the soil (suitable for long-term help). Follow the instructions on the chosen product to prevent excessive fertilizer usage."
+                ],
+                "biological": [
+                  "Replant the plant into fresh soil rich in nutrients.",
+                  "Add manure or compost to the soil."
+                ],
+                "prevention": [
+                  "Apply fertilizer regularly. Fertilizing is especially important during spring and summer.",
+                  "Change the soil regularly. Plants should be repotted when the soil is compacted, depleted of nutrients, and no longer retains water.",
+                  "Choose suitable neighboring plants. Plants with similar nutrient requirements should not be planted close to each other."
+                ]
+              },
+              "classification": [
+                "Abiotic",
+                "nutrient-related issue"
+              ],
+              "common_names": null,
+              "cause": null,
+              "language": "en",
+              "entity_id": "765b06482c4e4ae9"
+            }
+          },
+          {
+            "id": "c6fbc333b227bd54",
+            "name": "water deficiency",
+            "probability": 0.0659,
+            "details": {
+              "local_name": "water deficiency",
+              "description": "Water deficiency is similar in its symptoms to over-watering and it is important to identify the cause. Symptoms include slow growth, wilting, discolored leaves and flowers, burning on edges of leaves. The affected plant can also suffer from disrupted nutrient uptake.",
+              "url": "https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/pests-and-problems/environmental/drought.aspx",
+              "treatment": {
+                "chemical": [
+                  "You may apply hydrogel for plants to the soil to increase water retention capacity."
+                ],
+                "biological": [
+                  "For potted plants: if the soil is really dry, you may immerse the whole pot in water and wait until the soil absorbs the water.",
+                  "Replant the plant into a bigger pot, which has a higher retention capacity.",
+                  "Temporarily move the plant to a more shady place (roots might be damaged and do not manage to supply the plant with water)."
+                ],
+                "prevention": [
+                  "Mulch plants with a layer of organic mulch to reduce soil evaporation."
+                ]
+              },
+              "classification": [
+                "Abiotic",
+                "water-related issue"
+              ],
+              "common_names": [
+                "drought"
+              ],
+              "cause": null,
+              "language": "en",
+              "entity_id": "c6fbc333b227bd54"
+            }
+          },
+          {
+            "id": "5b5b0081922d3c45",
+            "name": "finished flowering period",
+            "probability": 0.0355,
+            "details": {
+              "local_name": "finished flowering period",
+              "description": "The finished flowering period is part of the physiological process when the flowers die at the end of the flowering period. If fertilized, flowers develop into fruits.",
+              "url": null,
+              "treatment": {
+                "prevention": [
+                  "Regularly remove flowers that have finished flowering. This will encourage the growth of new flowers.",
+                  "Supply the plant with a fertilizer high in phosphorus, which is good for flowers. Follow the instructions on the chosen product to prevent excessive fertilizer usage."
+                ]
+              },
+              "classification": [
+                "Senescence",
+                "Natural senescence"
+              ],
+              "common_names": null,
+              "cause": null,
+              "language": "en",
+              "entity_id": "5b5b0081922d3c45"
+            }
+          },
+          {
+            "id": "8c14a992fb987a96",
+            "name": "Viruses",
+            "probability": 0.0137,
+            "details": {
+              "local_name": "Viruses",
+              "description": "Viral diseases are infectious disorders caused by small intracellular parasites, which need host cells to survive. Viruses are usually transmitted by insects and mites to plants. Some viruses are serious plant pathogens such as the rose rosette virus or tobacco rattle virus.",
+              "url": "https://en.wikipedia.org/wiki/Virus",
+              "treatment": {
+                "biological": [
+                  "If possible remove and destroy the infected plant. Burn it or toss it into the garbage. Do not compost."
+                ],
+                "prevention": [
+                  "Eliminate potential disease carriers (e.g. thrips, aphids and leafhoppers).",
+                  "Disinfect tools, infected flower pots, and hands to avoid disease transmission."
+                ]
+              },
+              "classification": [],
+              "common_names": null,
+              "cause": null,
+              "language": "en",
+              "entity_id": "8c14a992fb987a96"
+            }
+          }
+        ]
+      }
+    },
+    "status": "COMPLETED",
+    "sla_compliant_client": true,
+    "sla_compliant_system": true,
+    "created": 1715841758.907999,
+    "completed": 1715841759.248454
+  }
