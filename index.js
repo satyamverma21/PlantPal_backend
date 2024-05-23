@@ -1,11 +1,14 @@
 require('dotenv').config()
 const express = require('express')
 const cors = require('cors');
+const path = require('path');
+
 const multer = require('multer');
 const bodyParser = require("body-parser");
 const connectToMongo = require('./db')
 const axios = require('axios');
-const { header } = require('express-validator');
+const Market = require('./models/market')
+const { header, check } = require('express-validator');
 const fs = require('fs');
 
 
@@ -20,17 +23,7 @@ app.use(cors())
 
 const production = false
 
-let fname;
-// const storage = multer.diskStorage({
-//     destination: (req, file, cb) => {
-//         cb(null, 'uploads/')
-//     },
-//     filename: (req, file, cb) => {
-//         fname = file.originalname;
-//         cb(null, fname);
-//     }
 
-// })
 // const upload = multer({ dest: 'uploads/' });
 const storage = multer.memoryStorage(); // Store files in memory
 
@@ -187,11 +180,88 @@ app.post('/idDicease', upload.single('image'), async (req, res) => {
     }
 })
 
-app.get('/', (req, res) => { res.send('welcome to plantpal backend') })
+const save_storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/')
+    },
+    filename: (req, file, cb) => {
+        console.log("file -> ", file)
 
-app.post('/sellPlant', (req, res) => {
-    res.json({ 'msg': 'success' })
+        fname = file.originalname;
+        cb(null, fname);
+    }
+
 })
+
+const save = multer({ storage: save_storage });
+
+
+
+async function appendData(username, newData) {
+    try {
+        await Market.findOneAndUpdate(
+            { username: username },
+            { $push: { data: { $each: newData } } }, // Use $each to append multiple items if newData is an array of objects
+            { upsert: true, new: true } // upsert: true creates a new document if none exists, new: true returns the updated document
+        );
+        console.log(`Data appended for username: ${username}`);
+    } catch (err) {
+        console.error('Error:', err);
+    }
+}
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+app.post('/uploadPlant', save.single('image'), async (req, res) => {
+
+    console.log("debug: /uploadPlant: ", req.body)
+
+    const data = req.body;
+    try {
+
+        let user = new Market({
+            username: data.username,
+            name: data.name,
+            price: data.price,
+            contact: data.contact,
+            additional: data.additional,
+            file: `/uploads/${data.File}`,
+        });
+        user = user.save()
+
+    } catch (error) {
+        console.log("error: ", error)
+        res.json({ 'msg': error })
+
+
+    }
+
+    res.json({ 'msg': 'Successfully added plant to market.' })
+    console.log("debug: /uploadPlant: exit",)
+
+})
+
+app.get('/market', async (req, res) => {
+
+    console.log("requested /market")
+    console.log("params : ", req.body)
+    let checkUser = await Market.find({ username: { $ne: req.query.id } }); // change name to username // debug
+
+    res.json({ "data": checkUser })
+    console.log(checkUser);
+
+})
+
+app.get('/myMarket', async (req, res) => {
+
+    // console.log("requested /market")
+    console.log("params : ", req.query.id)
+    let checkUser = await Market.find({username: req.query.id}); // change name to username // debug
+
+    res.json({ "data": checkUser })
+    // console.log(checkUser);
+
+})
+app.get('/', (req, res) => { res.send('welcome to plantpal backend') })
 
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/product', require('./routes/products'));

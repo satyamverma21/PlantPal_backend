@@ -27,10 +27,10 @@ router.post('/createuser', [
         return res.status(400).json({ error: errors.array()[0].path + " " + errors.array()[0].msg })
     }
     try {
-        let checkUser = await User.findOne({ email: req.body.email, username: req.body.username });
+            let checkUser = await User.findOne({ email: req.body.email, username: req.body.username });
 
         if (checkUser) {
-            return res.status(400).json({ error: "User with this email already exists" })
+            return res.status(400).json({ error: "Username or email already used." })
         }
         const salt = await bcrypt.genSalt(10);
         const { username, email, password } = req.body;
@@ -43,7 +43,7 @@ router.post('/createuser', [
             }
         }
         const authToken = jwt.sign(data, JWT_SECRET);
-        res.json({ authToken, message: "user created successfully" })
+        res.json({ authToken, message: "User created successfully" })
 
     }
     catch (err) {
